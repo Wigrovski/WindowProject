@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'NeoSansCyr-Regular';
+  src: url('NeoSansCyr-Regular.eot');
+  src: url('NeoSansCyr-Regular.eot?#iefix') format('embedded-opentype'),
+       url('NeoSansCyr-Regular.woff2') format('woff2'),
+       url('NeoSansCyr-Regular.woff') format('woff'),
+       url('NeoSansCyr-Regular.ttf') format('truetype'),
+       url('NeoSansCyr-Regular.svg#NeoSansCyr-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSansCyr-Medium';
+  src: url('NeoSansCyr-Medium.eot');
+  src: url('NeoSansCyr-Medium.eot?#iefix') format('embedded-opentype'),
+       url('NeoSansCyr-Medium.woff2') format('woff2'),
+       url('NeoSansCyr-Medium.woff') format('woff'),
+       url('NeoSansCyr-Medium.ttf') format('truetype'),
+       url('NeoSansCyr-Medium.svg#NeoSansCyr-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
