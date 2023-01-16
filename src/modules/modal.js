@@ -1,8 +1,32 @@
 import { animate } from "./helpers" 
 const modal = () => {
     const modal = document.querySelector('.header-modal')
+    const modalService = document.querySelector('.services-modal')
     const overlay = document.querySelector('.overlay')
     const btn = document.querySelector('.button')
+    const btnsService = document.querySelectorAll('.service-button')
+
+    
+    btnsService.forEach(btn => {
+        btn.addEventListener('click', () => {            
+                animate({
+                    duration: 80,
+                    timing(timeFraction) {
+                        return timeFraction
+                    },
+                    draw(progress) {
+                        modalService.style.display = 'block'
+                        modalService.style.opacity = '0'
+                        setTimeout(() => {
+                            modalService.style.transition = 'all .7s ease-in-out'
+                            modalService.style.opacity = '1'
+                        })
+                    }
+                }, 50)
+            modalService.style.display = 'block'
+            overlay.style.display = 'block'
+        })
+    })
 
     btn.addEventListener('click', () => {
         animate({
@@ -30,7 +54,14 @@ const modal = () => {
             modal.style.transition = ''
         }
     })
-
+    modalService.addEventListener('click', (e) => {
+        if ( e.target.classList.contains('services-modal__close')) {
+            modalService.style.display = 'none'
+            overlay.style.display = 'none'
+            modalService.style.opacity = ''
+            modalService.style.transition = ''
+        }
+    })
 
 }
 
