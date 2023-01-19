@@ -1590,11 +1590,7 @@ input.error {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-.benefits-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
+
 
 .benefits__item {
   width: 100%;

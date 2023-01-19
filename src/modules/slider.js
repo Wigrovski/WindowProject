@@ -6,7 +6,7 @@ export const clientsSlider = () => {
     var swiper = new Swiper(".benefits-inner", {
         modules: [Navigation],
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 20,
         loop: true,
         navigation: {
             nextEl: ".benefits__arrow--right",
