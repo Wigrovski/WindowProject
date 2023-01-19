@@ -23,7 +23,7 @@ export const clientsSlider = () => {
 
 export const serviceSlider = () => {
 
-    var swiper = new Swiper(".row", {
+    var swiper = new Swiper(".service", {
         modules: [Navigation],
         slidesPerView: 1,
         spaceBetween: 20,
