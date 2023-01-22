@@ -141,19 +141,19 @@
     		</div>
 			<div class="row">
 				<div class="col-md-12 col-md-6">
-					<div class="form-group">
+					<div class="form-group form-calc">
 						<label for="calc-type" class="text-warning">Балкон/Лоджия</label>
-						<select name="calc-type" class="form-control form-control-sm" id="calc-type">
-						  <option>--</option>
-						  <option value="1.2">Балкон</option>
-						  <option value="1.3">Лоджия</option>
+						<select name="calc-type" class="form-control form-control-sm" id="calc-type" required>
+						<option>--</option>
+						<option value="1.2">Балкон</option>
+						<option value="1.3">Лоджия</option>
 						</select>
-					  </div>
+					</div>
 				</div>
 				<div class="col-md-12 col-md-6">
-					<div class="form-group">
+					<div class="form-group form-calc">
 						<label for="calc-type-material" class="text-warning">Выберите тип остекления</label>
-						<select name="calc-type-material" class="form-control form-control-sm" id="calc-type-material">
+						<select name="calc-type-material" class="form-control form-control-sm" id="calc-type-material" required>
 						  <option>--</option>
 						  <option value="1">Холодное Аллюминием</option>
 						  <option value="2">Теплое ПВХ</option>
@@ -163,13 +163,13 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-md-6">
-					<div class="form-group">
+					<div class="form-group form-calc">
 						<label for="calc-input" class="text-warning">Площадь (м&sup2;)</label>
 						<input name="calc-input" type="number" class="form-control" id="calc-input" placeholder="Площадь (м&sup2;)">
 					  </div>
 				</div>
 				<div class="col-md-12 col-md-6">
-					<div class="form-group">
+					<div class="form-group form-calc">
 						<label for="calc-total" class="text-warning">Итого</label>
 						<input name="calc-total" type="number" class="form-control" id="calc-total" placeholder="Итого" disabled>
 					  </div>
@@ -464,7 +464,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form" class="form-horizontal">
+    						<form id="form1" name="action-form" class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
@@ -610,25 +610,24 @@
     		</div>
     		<div class="text-center">
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
+	    			<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+					<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
 	    		</div>
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
-	    		</div>
-	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
-	    		</div>
+					<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+					<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
+			</div>
+			<div class="col-sm-4">
+				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+				<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
+			</div>
     		</div>
     	</div>
+		<div id="modalDoc" class="modal-doc">
+			<span id="close" class="close">&#65794;</span>
+  			<img class="modal-content" id="img">
+		</div>
+		
     </div>
     <div id="order_2" class="order">
     	<div class="container">
@@ -652,7 +651,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form2" class="form-horizontal">
+    						<form id="form2" name="action-form2" class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">

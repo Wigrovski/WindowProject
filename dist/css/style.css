@@ -38,6 +38,9 @@ h3 {
 }
 .img-responsive {
   display: inline-block;
+  width:100%;
+  max-width:200px;
+  cursor: pointer; 
 }
 .phone-icon {
   background: url("../images/phone.png") no-repeat;
@@ -1664,6 +1667,41 @@ input.error {
   bottom: 25px;
   transform: rotate(90deg);
 }
+.modal-doc {
+  display: none; 
+  position: fixed; 
+  z-index: 99; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7); 
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 500px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @media (min-width: 576px) {
   .benefits-wrap {
@@ -1677,4 +1715,20 @@ input.error {
     width: 100%;
     max-width: 576px;
   }
+}
+.modal-content{  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }

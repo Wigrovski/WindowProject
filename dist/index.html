@@ -280,7 +280,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form" class="form-horizontal">
+    						<form id="form1" name="action-form" class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
@@ -426,25 +426,24 @@
     		</div>
     		<div class="text-center">
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
+	    			<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+					<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
 	    		</div>
 	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
-	    		</div>
-	    		<div class="col-sm-4">
-	    			<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents">
-	    				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
-	    				<div class="document-overlay"></div>
-	    			</a>
-	    		</div>
+					<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+					<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
+			</div>
+			<div class="col-sm-4">
+				<img src="images/documents/document4.jpg" class="img-responsive" alt="">
+				<a href="images/documents/original/document4.jpg" class="sertificate-document" data-fancybox-group="gallery-documents"></a>
+			</div>
     		</div>
     	</div>
+		<div id="modalDoc" class="modal-doc">
+			<span id="close" class="close">&#65794;</span>
+  			<img class="modal-content" id="img">
+		</div>
+		
     </div>
     <div id="order_2" class="order">
     	<div class="container">
@@ -468,7 +467,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form2" class="form-horizontal">
+    						<form id="form2" name="action-form2" class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
@@ -586,7 +585,7 @@
             <p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все вопросы!</p>
             <form name="callback-form">
                 <div class="form-group">
-                    <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
+                    <input type="text" name="fio" class="   required" placeholder="Ваше имя*">
                 </div>
                 <div class="form-group">
                     <input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
