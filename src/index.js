@@ -14,8 +14,22 @@ clientsSlider()
 serviceSlider()
 modal()
 timer('23 january 2023')
-sendForm({formId: 'form1',})
-sendForm({formId: 'form2',})
+sendForm({
+    formId: 'form1', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'calc-total'
+        }]
+})
+sendForm({
+    formId: 'form2', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'calc-total'
+        }]
+})
 validate()
 calc()
 zoom()
