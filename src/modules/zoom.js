@@ -9,9 +9,11 @@ export const zoom = () => {
         img.addEventListener('click', () => {
             modal.style.display = 'block'
             modalImg.src = doc.href
+            document.body.style.overflow = 'hidden'
         })
         close.addEventListener('click', () => {
             modal.style.display = "none"
+            document.body.style.overflow = ''
         })
         window.onscroll = function(){
             return false;
