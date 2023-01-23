@@ -19,9 +19,9 @@ export const timer = (deadline) => {
     timerDays.forEach(item => {
         function showTimer(days, hours, minutes, seconds) {
             let getTime = getTimeRemaining()
-            if (getTime.timeRemaining <= 0) {
+            if (getTime.timeRemaining <= 0 || getTime.days === 0) {
                 clearInterval(timeInterval)
-                item.textContent = '00'
+                item.textContent = ' '
                 return
             }
             item.textContent = getTime.days

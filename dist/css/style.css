@@ -579,7 +579,7 @@ input.error {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 197, 0, 0.4);
+  background-color: rgba(255, 197, 0, 0.7);
   width: 100%;
   height: 100%;
   border-top-left-radius: 10px;
@@ -1584,13 +1584,14 @@ input.error {
 .overlay {
   display: none;
   position: fixed;
+  z-index: 90;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /* .benefits-wrap {
   display: flex;

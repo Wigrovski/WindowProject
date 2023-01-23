@@ -13,7 +13,7 @@ scroll()
 clientsSlider()
 serviceSlider()
 modal()
-timer('23 january 2023')
+timer('24 january 2023')
 sendForm({
     formId: 'form1', 
     someElem: [
