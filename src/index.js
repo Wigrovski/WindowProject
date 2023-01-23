@@ -30,6 +30,22 @@ sendForm({
             id: 'calc-total'
         }]
 })
+sendForm({
+    formId: 'form3', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'calc-total'
+        }]
+})
+sendForm({
+    formId: 'form4', 
+    someElem: [
+        {
+            type: 'block',
+            id: 'calc-total'
+        }]
+})
 validate()
 calc()
 zoom()
